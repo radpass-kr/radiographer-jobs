@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>대학병원·의료원 방사선사 채용공고 모음</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#fff; --ink:#1b1f24; --muted:#5b6470; --line:#e2e5ea;
+    --accent:#1f5fbf; --accent-soft:#e8f0fc; --warn:#b4231f; --warn-soft:#fdecea;
+    --ok:#1d7a46; --ok-soft:#e6f4ec; --closed:#8a919b;
+  }
+  *{box-sizing:border-box}
+  html{font-size:16px}
+  html.large{font-size:19px}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;line-height:1.55}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:#fff;padding:.5rem 1rem;z-index:10}
+  .skip:focus{left:0}
+  header{background:#fff;border-bottom:1px solid var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 1rem}
+  header .wrap{padding-top:1.4rem;padding-bottom:1.2rem}
+  h1{font-size:1.5rem;margin:0 0 .35rem}
+  .intro{color:var(--muted);margin:0}
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+  .size{display:flex;gap:.3rem;align-items:center;font-size:.85rem;color:var(--muted)}
+  .size button{border:1px solid var(--line);background:#fff;border-radius:6px;padding:.25rem .6rem;cursor:pointer;font:inherit}
+  .size button[aria-pressed="true"]{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .stats{display:flex;gap:.75rem;flex-wrap:wrap;margin:1.2rem 0 .5rem}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem;min-width:150px}
+  .stat b{display:block;font-size:1.4rem}
+  .stat span{color:var(--muted);font-size:.85rem}
+  .notice{background:#fff8e6;border:1px solid #f1dfaa;border-radius:10px;padding:.7rem 1rem;font-size:.9rem;margin:.6rem 0 1rem}
+  .controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem;margin-bottom:1rem}
+  .controls input[type=search]{flex:1 1 240px;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
+  .controls select{padding:.5rem .6rem;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+  .controls label.chk{display:flex;gap:.35rem;align-items:center;font-size:.9rem;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:#f0f2f5;font-size:.85rem;color:var(--muted);font-weight:600}
+  tr:last-child td{border-bottom:none}
+  .org{font-weight:600}
+  .tag{display:inline-block;font-size:.75rem;padding:.08rem .45rem;border-radius:999px;margin:.15rem .2rem 0 0;background:#eef0f3;color:#3a424c}
+  .tag.type{background:var(--accent-soft);color:var(--accent)}
+  .tag.reg{background:var(--ok-soft);color:var(--ok)}
+  .note{color:var(--muted);font-size:.82rem;margin-top:.2rem}
+  .dday{display:inline-block;font-size:.78rem;font-weight:700;padding:.08rem .45rem;border-radius:6px;margin-left:.3rem}
+  .dday.soon{background:var(--warn-soft);color:var(--warn)}
+  .dday.open{background:var(--ok-soft);color:var(--ok)}
+  .dday.closed{background:#eceef1;color:var(--closed)}
+  tr.is-closed td{color:var(--closed)}
+  a{color:var(--accent)}
+  .empty{padding:2rem;text-align:center;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:10px}
+  section.links{margin:2rem 0 1rem}
+  section.links h2{font-size:1.15rem;margin:0 0 .6rem}
+  .linkgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.7rem}
+  .linkgrid div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem}
+  .linkgrid h3{font-size:.92rem;margin:0 0 .4rem;color:var(--muted)}
+  .linkgrid ul{margin:0;padding-left:1.1rem}
+  footer{color:var(--muted);font-size:.82rem;padding:1.5rem 0 2.5rem}
+  @media (max-width:720px){
+    table,thead,tbody,tr,th,td{display:block}
+    thead{display:none}
+    table{border:none;background:none}
+    tr{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:.7rem;padding:.4rem 0}
+    td{border:none;padding:.3rem .9rem}
+    td[data-label]::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--muted)}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#list">공고 목록으로 바로가기</a>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>대학병원·의료원 방사선사 채용공고</h1>
+        <p class="intro">대학병원(상급종합·대학부속)과 의료원(지방의료원·국공립 의료원)의 방사선사 공고만 모았습니다. 1·2차 병원(의원·병원급·일반 종합병원) 공고는 넣지 않습니다. 지원 전에 반드시 원문 공고에서 자격요건과 마감일을 확인하세요.</p>
+      </div>
+      <div class="size" role="group" aria-label="글자 크기">
+        글자 크기
+        <button type="button" data-size="normal" aria-pressed="true">보통</button>
+        <button type="button" data-size="large" aria-pressed="false">크게</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="stats" aria-live="polite">
+    <div class="stat"><b id="cOpen">0</b><span>접수 중</span></div>
+    <div class="stat"><b id="cSoon">0</b><span>3일 안에 마감</span></div>
+    <div class="stat"><b id="cUpd">-</b><span>마지막 업데이트</span></div>
+  </div>
+  <p class="notice">공고는 직접 확인해서 손으로 업데이트합니다. 병원 사정으로 조기 마감되거나 일정이 바뀔 수 있어요. 마감일은 해당일 23:59 기준으로 계산합니다.</p>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="병원명, 부서(CT·MRI·핵의학·초음파 등) 검색" aria-label="검색">
+    <select id="fKind" aria-label="기관 구분">
+      <option value="">전체 기관</option>
+      <option value="대학병원">대학병원</option>
+      <option value="의료원">의료원</option>
+    </select>
+    <select id="fRegion" aria-label="지역"><option value="">전체 지역</option></select>
+    <select id="fType" aria-label="고용형태">
+      <option value="">전체 고용형태</option>
+      <option value="정규직">정규직</option>
+      <option value="계약직">계약직·기간제·임시직</option>
+      <option value="대체">휴직·육아휴직 대체</option>
+    </select>
+    <select id="sort" aria-label="정렬">
+      <option value="deadline">마감 임박순</option>
+      <option value="recent">최근 등록순</option>
+      <option value="org">기관명순</option>
+    </select>
+    <label class="chk"><input type="checkbox" id="hideClosed" checked> 마감된 공고 숨기기</label>
+  </div>
+
+  <div id="list" tabindex="-1">
+    <table>
+      <thead><tr><th>기관</th><th>채용 분야</th><th>근무지</th><th>접수 마감</th><th>공고</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" hidden>조건에 맞는 공고가 없어요.</div>
+  </div>
+
+  <section class="links" aria-labelledby="h-links">
+    <h2 id="h-links">직접 찾아보기</h2>
+    <div class="linkgrid">
+      <div>
+        <h3>국공립 의료원·공공기관</h3>
+        <ul>
+          <li><a href="https://job.alio.go.kr/">잡알리오</a> (국립대병원·국립중앙의료원 등)</li>
+          <li><a href="https://www.gojobs.go.kr/">나라일터</a></li>
+          <li><a href="https://www.work24.go.kr/">고용24</a> (지방의료원 공고 다수)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>대학병원 방사선사 모음</h3>
+        <ul>
+          <li><a href="https://www.meducalcampus.com/recruitment">메듀컬캠퍼스 상급종합병원 방사선사 공고</a></li>
+          <li><a href="https://www.saramin.co.kr/zf_user/jobs/list/job-category?cat_kewd=468">사람인 방사선사 직무</a></li>
+          <li><a href="https://www.jobkorea.co.kr/Search/?stext=%EB%8C%80%ED%95%99%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC+%EC%B1%84%EC%9A%A9">잡코리아 '대학병원 방사선사'</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>병원 채용 홈페이지</h3>
+        <ul>
+          <li><a href="https://www.eumc.ac.kr/intro/recrut/list.do">이화의료원</a></li>
+          <li><a href="https://recruit.incruit.com/khmc/job/">경희의료원</a></li>
+          <li><a href="https://hyumc.recruiter.co.kr/">한양대학교병원</a></li>
+          <li><a href="https://www.kuh.ac.kr/m/recruit/main.do">건국대학교병원</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    출처: 각 병원 채용 홈페이지, 메듀컬캠퍼스, 인크루트. 비상업적 참고용 페이지이며 공고의 정확성은 원문을 기준으로 합니다.
+  </footer>
+</main>
+
+<script>
+/* ===== 업데이트할 때 여기만 고치면 됩니다 =====
+   kind: "대학병원" 또는 "의료원"
+   type: "정규직" / "계약직" / "기간제" / "임시직" / "파트타임" 등
+   sub:  "대체"가 들어가면 휴직·육아휴직 대체로 분류
+   start, deadline: "YYYY-MM-DD"
+*/
+const UPDATED = "2026-11-18";
+const JOBS = [
+  {org:"경희의료원", kind:"대학병원", field:"영상의학과 방사선사 (신입)", type:"계약직", region:"서울", place:"서울 동대문구", start:"2026-11-17", deadline:"2026-11-24", url:"https://recruit.incruit.com/khmc/job/"},
+  {org:"중앙대학교광명병원", kind:"대학병원", field:"영상의학과 방사선사", type:"계약직", sub:"휴직대체", region:"경기", place:"경기 광명시", start:"2026-11-17", deadline:"2026-11-22", url:"https://www.meducalcampus.com/recruitment/?idx=175716421&bmode=view"},
+  {org:"분당서울대학교병원", kind:"대학병원", field:"11월 신입 보건직 (방사선사 포함 여부 원문 확인)", type:"계약직", region:"경기", place:"경기 성남시", start:"2026-11-17", deadline:"2026-11-26", note:"방사선사 전용 공고 아님", url:"https://www.meducalcampus.com/recruitment/?idx=175716398&bmode=view"},
+  {org:"분당서울대학교병원", kind:"대학병원", field:"11월 경력 보건직 (방사선사 포함 여부 원문 확인)", type:"파트타임", region:"경기", place:"경기 성남시", start:"2026-11-17", deadline:"2026-11-26", note:"방사선사 전용 공고 아님", url:"https://www.meducalcampus.com/recruitment/?idx=175716394&bmode=view"},
+  {org:"강북삼성병원", kind:"대학병원", field:"영상의학과 특수파트 방사선사", type:"계약직", region:"서울", place:"서울 종로구", start:"2026-11-16", deadline:"2026-11-22", url:"https://www.meducalcampus.com/recruitment/?idx=175698107&bmode=view"},
+  {org:"고려대학교 안암병원", kind:"대학병원", field:"영상의학과 방사선사", type:"계약직", region:"서울", place:"서울 성북구", start:"2026-11-16", deadline:"2026-11-22", url:"https://www.meducalcampus.com/recruitment/?idx=175698100&bmode=view"},
+  {org:"이대목동병원", kind:"대학병원", field:"영상의학팀 방사선사", type:"계약직", region:"서울", place:"서울 양천구", start:"2026-11-16", deadline:"2026-11-22", url:"https://www.eumc.ac.kr/intro/recrut/list.do"},
+  {org:"한양대학교병원", kind:"대학병원", field:"영상의학과 방사선사", type:"임시직", region:"서울", place:"서울 성동구", start:"2026-11-13", deadline:"2026-11-26", url:"https://www.meducalcampus.com/recruitment/?idx=175668428&bmode=view"},
+  {org:"가톨릭대학교 부천성모병원", kind:"대학병원", field:"영상의학팀 방사선직", type:"계약직", region:"경기", place:"경기 부천시", start:"2026-11-13", deadline:"2026-11-18", url:"https://www.meducalcampus.com/recruitment/?idx=175668404&bmode=view"},
+  {org:"고신대학교복음병원", kind:"대학병원", field:"방사선사", type:"임시직", region:"부산", place:"부산 서구", start:"2026-11-12", deadline:"2026-11-19", url:"https://www.meducalcampus.com/recruitment/?idx=175607791&bmode=view"},
+  {org:"삼성서울병원", kind:"대학병원", field:"핵의학검사실 방사선사", type:"계약직", region:"서울", place:"서울 강남구", start:"2026-11-11", deadline:"2026-11-18", url:"https://www.meducalcampus.com/recruitment/?idx=175588616&bmode=view"},
+  {org:"원주세브란스기독병원", kind:"대학병원", field:"영상의학과 방사선사", type:"계약직", sub:"육아휴직 대체", region:"강원", place:"강원 원주시", start:"2026-11-11", deadline:"2026-11-18", url:"https://www.meducalcampus.com/recruitment/?idx=175588609&bmode=view"},
+  {org:"세브란스병원", kind:"대학병원", field:"영상의학팀 방사선사", type:"계약직", sub:"육아휴직 대체", region:"서울", place:"서울 서대문구", start:"2026-11-10", deadline:"2026-11-19", url:"https://www.meducalcampus.com/recruitment/?idx=175563684&bmode=view"},
+  {org:"단국대학교병원", kind:"대학병원", field:"영상의학과 방사선사", type:"기간제", region:"충남", place:"충남 천안시", start:"2026-11-08", deadline:"2026-11-24", url:"https://www.meducalcampus.com/recruitment/?idx=175563667&bmode=view"},
+  {org:"인제대학교 부산백병원", kind:"대학병원", field:"산부인과 초음파실 방사선사 (신입)", type:"정규직", region:"부산", place:"부산 부산진구", start:"2026-11-09", deadline:"2026-11-22", url:"https://www.meducalcampus.com/recruitment/?idx=175539374&bmode=view"}
+];
+
+/* ===== 이 아래는 화면 처리 ===== */
+const $ = id => document.getElementById(id);
+const DAY = 86400000;
+function kstToday(){
+  const now = new Date(Date.now() + 9*3600000);
+  return Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+}
+function dayNum(s){ const [y,m,d]=s.split("-").map(Number); return Date.UTC(y,m-1,d); }
+function dleft(j){ return Math.round((dayNum(j.deadline) - kstToday())/DAY); }
+function fmt(s){ const d=new Date(dayNum(s)); return `${d.getUTCMonth()+1}.${d.getUTCDate()}(${"일월화수목금토"[d.getUTCDay()]})`; }
+function typeGroup(j){
+  if ((j.sub||"").includes("대체")) return "대체";
+  return j.type === "정규직" ? "정규직" : "계약직";
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+[...new Set(JOBS.map(j=>j.region))].sort().forEach(r=>{
+  const o=document.createElement("option"); o.value=r; o.textContent=r; $("fRegion").appendChild(o);
+});
+
+function render(){
+  const q=$("q").value.trim().toLowerCase(), k=$("fKind").value, r=$("fRegion").value,
+        t=$("fType").value, hide=$("hideClosed").checked, sort=$("sort").value;
+  let list = JOBS.map(j=>({...j, left:dleft(j)}));
+  $("cOpen").textContent = list.filter(j=>j.left>=0).length;
+  $("cSoon").textContent = list.filter(j=>j.left>=0 && j.left<=3).length;
+  $("cUpd").textContent = fmt(UPDATED);
+  list = list.filter(j=>{
+    if (hide && j.left<0) return false;
+    if (k && j.kind!==k) return false;
+    if (r && j.region!==r) return false;
+    if (t && typeGroup(j)!==t) return false;
+    if (q && !(`${j.org} ${j.field} ${j.place} ${j.type} ${j.sub||""}`.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  list.sort((a,b)=>{
+    if (sort==="org") return a.org.localeCompare(b.org,"ko");
+    if (sort==="recent") return dayNum(b.start)-dayNum(a.start);
+    const ac=a.left<0, bc=b.left<0;
+    if (ac!==bc) return ac?1:-1;
+    return a.left-b.left;
+  });
+  $("rows").innerHTML = list.map(j=>{
+    let badge;
+    if (j.left<0) badge='<span class="dday closed">마감</span>';
+    else if (j.left===0) badge='<span class="dday soon">오늘 마감</span>';
+    else badge=`<span class="dday ${j.left<=3?"soon":"open"}">D-${j.left}</span>`;
+    return `<tr class="${j.left<0?"is-closed":""}">
+      <td data-label="기관"><div class="org">${esc(j.org)}</div><span class="tag">${esc(j.kind)}</span></td>
+      <td data-label="채용 분야">${esc(j.field)}<div><span class="tag type">${esc(j.type)}</span>${j.sub?`<span class="tag type">${esc(j.sub)}</span>`:""}</div>${j.note?`<div class="note">${esc(j.note)}</div>`:""}</td>
+      <td data-label="근무지"><span class="tag reg">${esc(j.region)}</span> ${esc(j.place)}</td>
+      <td data-label="접수 마감">${fmt(j.deadline)} ${badge}<div class="note">접수 시작 ${fmt(j.start)}</div></td>
+      <td data-label="공고"><a href="${esc(j.url)}" target="_blank" rel="noopener">공고 보기</a></td>
+    </tr>`;
+  }).join("");
+  $("empty").hidden = list.length>0;
+}
+["q","fKind","fRegion","fType","sort","hideClosed"].forEach(id=>$(id).addEventListener("input",render));
+
+document.querySelectorAll(".size button").forEach(b=>b.addEventListener("click",()=>{
+  const large=b.dataset.size==="large";
+  document.documentElement.classList.toggle("large",large);
+  document.querySelectorAll(".size button").forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+  try{ localStorage.setItem("textSize", b.dataset.size); }catch(e){}
+}));
+try{ if(localStorage.getItem("textSize")==="large") document.querySelector('.size button[data-size="large"]').click(); }catch(e){}
+
+render();
+</script>
+</body>
+</html>
