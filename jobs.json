@@ -20,7 +20,8 @@
     "부산대학교병원": "https://pnuh.recruiter.co.kr/",
     "경상북도안동의료원": "https://gb.saramin.co.kr/",
     "경상북도포항의료원": "https://gb.saramin.co.kr/",
-    "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp"
+    "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp",
+    "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit"
   },
   "jobs": [
     {
@@ -56,7 +57,7 @@
       "place": "부산 서구",
       "start": "2026-11-12",
       "deadline": "2026-11-19",
-      "url": "https://www.kosinmed.or.kr/"
+      "url": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit&mode=view&idx=371"
     },
     {
       "org": "이대목동병원",
