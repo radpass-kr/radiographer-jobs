@@ -33,6 +33,15 @@
   .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.7rem 1rem;min-width:150px}
   .stat b{display:block;font-size:1.4rem}
   .stat span{color:var(--muted);font-size:.85rem}
+  .ad{display:flex;align-items:center;gap:1rem;background:#0b1730;color:#e8f0ff;border-radius:12px;padding:.8rem;margin:0 0 1rem;text-decoration:none;position:relative;overflow:hidden}
+  .ad:hover,.ad:focus-visible{box-shadow:0 0 0 3px #4da3ff}
+  .ad img{width:180px;height:auto;border-radius:8px;flex:none;display:block}
+  .ad .ad-txt{flex:1;min-width:0}
+  .ad .ad-label{position:absolute;top:.45rem;right:.6rem;font-size:.7rem;color:#9fb3d9;border:1px solid #3b4f78;border-radius:4px;padding:0 .3rem}
+  .ad strong{display:block;font-size:1.15rem;color:#fff;margin-bottom:.15rem}
+  .ad span.d{display:block;font-size:.9rem;color:#c9d6ef}
+  .ad span.go{display:inline-block;margin-top:.5rem;background:#f5c542;color:#1b1f24;font-weight:700;font-size:.88rem;padding:.3rem .8rem;border-radius:999px}
+  @media (max-width:520px){.ad{flex-direction:column;align-items:stretch;text-align:center}.ad img{width:100%}}
   .notice{background:#fff8e6;border:1px solid #f1dfaa;border-radius:10px;padding:.7rem 1rem;font-size:.9rem;margin:.6rem 0 1rem}
   .controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem;margin-bottom:1rem}
   .controls input[type=search]{flex:1 1 240px;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
@@ -96,6 +105,16 @@
     <div class="stat"><b id="cUpd">-</b><span>마지막 업데이트</span></div>
   </div>
   <p class="notice">공고는 직접 확인해서 손으로 업데이트합니다. 병원 사정으로 조기 마감되거나 일정이 바뀔 수 있어요. 마감일은 해당일 23:59 기준으로 계산합니다.</p>
+
+  <a class="ad" href="https://kmong.com/@%EB%9D%BC%EB%93%9C%ED%8C%A8%EC%8A%A4" target="_blank" rel="noopener sponsored" aria-label="라드패스 방사선사 국가고시 자료집 보러 가기 (크몽, 새 창)">
+    <img src="radpass.jpg" alt="RADPASS 라드패스 — 방사선사 국가고시 완벽 대비 (일반촬영·CT·MRI·혈관조영·핵의학·방사선치료·방사선물리·방사선생물)" width="800" height="600">
+    <span class="ad-txt">
+      <span class="ad-label">광고</span>
+      <strong>라드패스 RADPASS</strong>
+      <span class="d">방사선사 국가고시 대비 자료집 · 일반촬영부터 방사선치료학까지</span>
+      <span class="go">크몽에서 보기 →</span>
+    </span>
+  </a>
 
   <div class="controls">
     <input type="search" id="q" placeholder="병원명, 부서(CT·MRI·핵의학·초음파 등) 검색" aria-label="검색">
