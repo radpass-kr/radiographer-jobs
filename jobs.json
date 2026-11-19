@@ -288,6 +288,55 @@
       "deadline": "2026-11-25",
       "note": "같은 내용 공고 2건 게시됨",
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611190000042"
+    },
+    {
+      "org": "경상북도포항의료원",
+      "kind": "의료원",
+      "field": "방사선사",
+      "type": "계약직",
+      "region": "경북",
+      "place": "경북 포항시",
+      "start": "2026-11-19",
+      "deadline": "2026-11-21",
+      "note": "접수 시작일은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%ED%8F%AC%ED%95%AD%EC%9D%98%EB%A3%8C%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+    },
+    {
+      "org": "경상북도안동의료원",
+      "kind": "의료원",
+      "field": "방사선사 (재공고)",
+      "type": "계약직",
+      "sub": "육아휴직 대체",
+      "region": "경북",
+      "place": "경북 안동시",
+      "start": "2026-11-19",
+      "deadline": "2026-11-22",
+      "note": "접수 시작일은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%95%88%EB%8F%99%EC%9D%98%EB%A3%8C%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+    },
+    {
+      "org": "전남대학교병원 (화순)",
+      "kind": "대학병원",
+      "field": "11월 지원직 공개채용 (영상의학검사)",
+      "type": "계약직",
+      "region": "전남",
+      "place": "전남 화순군",
+      "start": "2026-11-12",
+      "deadline": "2026-11-25",
+      "note": "여러 직종 통합 공고 · 고용형태 원문 확인",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611120000051"
+    },
+    {
+      "org": "삼성창원병원",
+      "kind": "대학병원",
+      "field": "영상의학과검사팀 방사선사",
+      "type": "계약직",
+      "region": "경남",
+      "place": "경남 창원시",
+      "start": "2026-11-19",
+      "deadline": "2026-12-03",
+      "note": "성균관대 부속 · 고용형태·시작일 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%82%BC%EC%84%B1%EC%B0%BD%EC%9B%90%EB%B3%91%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
     }
   ]
 }
