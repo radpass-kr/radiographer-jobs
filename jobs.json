@@ -1,5 +1,24 @@
 {
   "updated": "2026-11-19",
+  "sites": {
+    "분당차병원": "https://recruit.chamc.co.kr/",
+    "세브란스병원": "https://yuhs.recruiter.co.kr/",
+    "이대목동병원": "https://www.eumc.ac.kr/intro/recrut/list.do",
+    "이대서울병원": "https://www.eumc.ac.kr/intro/recrut/list.do",
+    "고려대학교 안암병원": "https://recruit.kumc.or.kr/",
+    "고려대학교 안산병원": "https://recruit.kumc.or.kr/",
+    "중앙대학교광명병원": "https://caumc.recruiter.co.kr/",
+    "인제대학교 부산백병원": "https://paik.recruiter.co.kr/",
+    "가톨릭대학교 은평성모병원": "https://recruit.cmcnu.or.kr/",
+    "가톨릭대학교 의정부성모병원": "https://recruit.cmcnu.or.kr/",
+    "경희의료원": "https://recruit.incruit.com/khmc/job/",
+    "단국대학교병원": "https://www.dkuh.co.kr/html_2016/",
+    "삼성서울병원": "https://www.samsunghospital.com/home/recruit/main.do",
+    "한양대학교병원": "https://hyumc.recruiter.co.kr/",
+    "분당서울대학교병원": "http://recruit.snubh.org/",
+    "가톨릭관동대학교 국제성모병원": "https://ish-recruiter.recruiter.co.kr/",
+    "부산대학교병원": "https://pnuh.recruiter.co.kr/"
+  },
   "jobs": [
     {
       "org": "분당차병원",

@@ -56,6 +56,8 @@
   .tag.type{background:var(--accent-soft);color:var(--accent)}
   .tag.reg{background:var(--ok-soft);color:var(--ok)}
   .note{color:var(--muted);font-size:.82rem;margin-top:.2rem}
+  .links-cell a{display:block;white-space:nowrap}
+  .links-cell a + a{margin-top:.3rem}
   .dday{display:inline-block;font-size:.78rem;font-weight:700;padding:.08rem .45rem;border-radius:6px;margin-left:.3rem}
   .dday.soon{background:var(--warn-soft);color:var(--warn)}
   .dday.open{background:var(--ok-soft);color:var(--ok)}
@@ -143,7 +145,7 @@
 
   <div id="list" tabindex="-1">
     <table>
-      <thead><tr><th>기관</th><th>채용 분야</th><th>근무지</th><th>접수 마감</th><th>공고</th></tr></thead>
+      <thead><tr><th>기관</th><th>채용 분야</th><th>근무지</th><th>접수 마감</th><th>바로가기</th></tr></thead>
       <tbody id="rows"></tbody>
     </table>
     <div class="empty" id="empty">공고를 불러오는 중이에요…</div>
@@ -194,10 +196,15 @@
    type: "정규직" / "계약직" / "기간제" / "임시직" / "파트타임" 등
    sub:  "대체"가 들어가면 휴직·육아휴직 대체로 분류
    start, deadline: "YYYY-MM-DD"
+   url:  공고 글 주소 ("공고 보기" 버튼)
+   sites: 병원 이름 → 채용 홈페이지 주소 ("채용사이트 가기" 버튼)
+          공고마다 다르게 하려면 그 공고에 "site": "주소"를 넣으면 됩니다.
+          url과 채용사이트가 같으면 "채용사이트 가기" 하나만 보입니다.
    페이지가 카카오톡 등에 저장(캐시)돼 있어도 jobs.json은 열 때마다 새로 받아 옵니다.
 */
 let UPDATED = "";
 let JOBS = [];
+let SITES = {};
 
 /* ===== 이 아래는 화면 처리 ===== */
 const $ = id => document.getElementById(id);
@@ -253,11 +260,18 @@ function render(){
       <td data-label="채용 분야">${esc(j.field)}<div><span class="tag type">${esc(j.type)}</span>${j.sub?`<span class="tag type">${esc(j.sub)}</span>`:""}</div>${j.note?`<div class="note">${esc(j.note)}</div>`:""}</td>
       <td data-label="근무지"><span class="tag reg">${esc(j.region)}</span> ${esc(j.place)}</td>
       <td data-label="접수 마감">${fmt(j.deadline)} ${badge}<div class="note">접수 시작 ${fmt(j.start)}</div></td>
-      <td data-label="공고"><a href="${esc(j.url)}" target="_blank" rel="noopener">공고 보기</a></td>
+      <td data-label="바로가기" class="links-cell">${linkCell(j)}</td>
     </tr>`;
   }).join("");
   $("empty").textContent = "조건에 맞는 공고가 없어요.";
   $("empty").hidden = list.length>0;
+}
+function linkCell(j){
+  const norm = u => (u||"").replace(/\/+$/,"");
+  const site = j.site || SITES[j.org] || "";
+  const a = (u,t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${t}</a>`;
+  if (site && norm(site)===norm(j.url)) return a(site,"채용사이트 가기");
+  return a(j.url,"공고 보기") + (site ? a(site,"채용사이트 가기") : "");
 }
 ["q","fKind","fRegion","fType","sort","hideClosed"].forEach(id=>$(id).addEventListener("input",render));
 
@@ -284,7 +298,7 @@ try{ if(localStorage.getItem("textSize")==="large") document.querySelector('.siz
 
 fetch("jobs.json?t=" + Date.now(), {cache:"no-store"})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d=>{ UPDATED = d.updated; JOBS = d.jobs; fillRegions(); render(); })
+  .then(d=>{ UPDATED = d.updated; JOBS = d.jobs; SITES = d.sites || {}; fillRegions(); render(); })
   .catch(()=>{ $("empty").hidden = false; $("empty").textContent = "공고를 불러오지 못했어요. 잠시 후 새로고침해 주세요."; });
 </script>
 </body>
