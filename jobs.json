@@ -18,6 +18,8 @@
     "분당서울대학교병원": "http://recruit.snubh.org/",
     "가톨릭관동대학교 국제성모병원": "https://ish-recruiter.recruiter.co.kr/",
     "부산대학교병원": "https://pnuh.recruiter.co.kr/",
+    "경상북도안동의료원": "https://gb.saramin.co.kr/",
+    "경상북도포항의료원": "https://gb.saramin.co.kr/",
     "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp"
   },
   "jobs": [
@@ -258,7 +260,7 @@
       "place": "인천 서구",
       "start": "2026-11-19",
       "deadline": "2026-11-29",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EA%B5%AD%EC%A0%9C%EC%84%B1%EB%AA%A8%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+      "url": "https://ish-recruiter.recruiter.co.kr/"
     },
     {
       "org": "부산대학교병원",
@@ -319,7 +321,7 @@
       "start": "2026-11-19",
       "deadline": "2026-11-21",
       "note": "접수 시작일은 원문 확인",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%ED%8F%AC%ED%95%AD%EC%9D%98%EB%A3%8C%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+      "url": "https://gb.saramin.co.kr/"
     },
     {
       "org": "경상북도안동의료원",
@@ -332,7 +334,7 @@
       "start": "2026-11-19",
       "deadline": "2026-11-22",
       "note": "접수 시작일은 원문 확인",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%95%88%EB%8F%99%EC%9D%98%EB%A3%8C%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+      "url": "https://gb.saramin.co.kr/"
     },
     {
       "org": "전남대학교병원 (화순)",
