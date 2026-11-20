@@ -20,7 +20,8 @@
     "부산대학교병원": "https://pnuh.recruiter.co.kr/",
     "경상북도안동의료원": "https://amc.recruiter.co.kr/",
     "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp",
-    "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit"
+    "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit",
+    "광주보훈병원": "https://bohun.recruiter.co.kr/"
   },
   "jobs": [
     {
@@ -324,6 +325,19 @@
       "deadline": "2026-12-03",
       "note": "성균관대 부속 · 고용형태·시작일 원문 확인",
       "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%82%BC%EC%84%B1%EC%B0%BD%EC%9B%90%EB%B3%91%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+    },
+    {
+      "org": "광주보훈병원",
+      "kind": "보훈병원",
+      "field": "계약직 보건직 방사선사 (작업치료사와 통합 공고)",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "광주",
+      "place": "광주 광산구",
+      "start": "2026-11-18",
+      "deadline": "2026-11-27",
+      "note": "한국보훈복지의료공단 소속 · 인원·마감 시각은 원문 확인",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000071"
     }
   ]
 }
