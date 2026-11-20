@@ -42,6 +42,11 @@
   .ad span.d{display:block;font-size:.9rem;color:#c9d6ef}
   .ad span.go{display:inline-block;margin-top:.5rem;background:#f5c542;color:#1b1f24;font-weight:700;font-size:.88rem;padding:.3rem .8rem;border-radius:999px}
   @media (max-width:520px){.ad{flex-direction:column;align-items:stretch;text-align:center}.ad img{width:100%}}
+  .updbox{margin:.8rem 0 0;padding:.7rem .9rem;background:#0b1730;color:#e8f0ff;border-radius:10px;font-size:.9rem}
+  .updbox p{margin:.15rem 0}
+  .updbox .src{color:#c9d6ef}
+  .updbox .hl{color:#f5c542;font-weight:700}
+  .updbox .sm{color:#9fb3d9;font-size:.82rem;margin-top:.45rem}
   .notice{background:#fff8e6;border:1px solid #f1dfaa;border-radius:10px;padding:.7rem 1rem;font-size:.9rem;margin:.6rem 0 1rem}
   .controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem;margin-bottom:1rem}
   .controls input[type=search]{flex:1 1 240px;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
@@ -92,6 +97,13 @@
       <div>
         <h1>대학병원·의료원 방사선사 채용공고</h1>
         <p class="intro">대학병원(상급종합·대학부속)과 의료원(지방의료원·국공립 의료원)의 방사선사 공고만 모았습니다. 1·2차 병원(의원·병원급·일반 종합병원) 공고는 넣지 않습니다. 지원 전에 반드시 원문 공고에서 자격요건과 마감일을 확인하세요.</p>
+        <div class="updbox">
+          <p class="src">전국 대학병원 · 의료원 · 보훈병원 채용 페이지에서 직접 확인한 공고</p>
+          <p class="hl">⏱ 채용공고는 매일 직접 확인해서 업데이트합니다. (업데이트 시간은 날마다 조금씩 달라질 수 있어요)</p>
+          <p class="hl">마지막 업데이트: <span id="updFull">-</span></p>
+          <p class="sm">이 페이지는 각 병원 채용 페이지와 구인 사이트를 직접 확인해 정리한 참고자료입니다. 지원 전에는 반드시 원문 공고를 확인해 주세요.</p>
+          <p class="sm">불편한 점이나 바라는 기능은 페이지 아래 의견란에 남겨 주세요.</p>
+        </div>
       </div>
       <div class="size" role="group" aria-label="글자 크기">
         글자 크기
@@ -196,7 +208,7 @@
    kind: "대학병원", "의료원" 또는 "보훈병원"
    type: "정규직" / "계약직" / "기간제" / "임시직" / "파트타임" 등
    sub:  "대체"가 들어가면 휴직·육아휴직 대체로 분류
-   start, deadline: "YYYY-MM-DD"
+   start, deadline: "YYYY-MM-DD"  (updated는 "YYYY-MM-DD HH:MM" 형식, 시간 생략 가능)
    url:  공고 글 주소 ("공고 보기" 버튼)
    sites: 병원 이름 → 채용 홈페이지 주소 ("채용사이트 가기" 버튼)
           공고마다 다르게 하려면 그 공고에 "site": "주소"를 넣으면 됩니다.
@@ -216,10 +228,17 @@ function kstToday(){
 }
 function dayNum(s){ const [y,m,d]=s.split("-").map(Number); return Date.UTC(y,m-1,d); }
 function dleft(j){ return Math.round((dayNum(j.deadline) - kstToday())/DAY); }
-function fmt(s){ const d=new Date(dayNum(s)); return `${d.getUTCMonth()+1}.${d.getUTCDate()}(${"일월화수목금토"[d.getUTCDay()]})`; }
+function fmt(s){ const d=new Date(dayNum(s.slice(0,10))); return `${d.getUTCMonth()+1}.${d.getUTCDate()}(${"일월화수목금토"[d.getUTCDay()]})`; }
 function typeGroup(j){
   if ((j.sub||"").includes("대체")) return "대체";
   return j.type === "정규직" ? "정규직" : "계약직";
+}
+function fmtFull(s){
+  const d=new Date(dayNum(s.slice(0,10)));
+  let out=`${d.getUTCMonth()+1}월 ${d.getUTCDate()}일 (${"일월화수목금토"[d.getUTCDay()]})`;
+  const t=s.slice(11,16);
+  if(t){ let [h,m]=t.split(":").map(Number); const ap=h<12?"오전":"오후"; h=h%12||12; out+=` ${ap} ${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`; }
+  return out;
 }
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
@@ -236,6 +255,7 @@ function render(){
   $("cOpen").textContent = list.filter(j=>j.left>=0).length;
   $("cSoon").textContent = list.filter(j=>j.left>=0 && j.left<=3).length;
   $("cUpd").textContent = UPDATED ? fmt(UPDATED) : "-";
+  if ($("updFull")) $("updFull").textContent = UPDATED ? fmtFull(UPDATED) : "-";
   list = list.filter(j=>{
     if (hide && j.left<0) return false;
     if (k && j.kind!==k) return false;
