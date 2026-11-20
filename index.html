@@ -76,6 +76,9 @@
   .linkgrid div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem 1rem}
   .linkgrid h3{font-size:.92rem;margin:0 0 .4rem;color:var(--muted)}
   .linkgrid ul{margin:0;padding-left:1.1rem}
+  section.feedback{margin:2rem 0 1rem;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1rem}
+  section.feedback h2{font-size:1.15rem;margin:0 0 .3rem}
+  section.feedback p.d{color:var(--muted);font-size:.88rem;margin:0 0 .8rem}
   footer{color:var(--muted);font-size:.82rem;padding:1.5rem 0 2.5rem}
   @media (max-width:720px){
     table,thead,tbody,tr,th,td{display:block}
@@ -195,6 +198,12 @@
         </ul>
       </div>
     </div>
+  </section>
+
+  <section class="feedback" id="feedback" aria-labelledby="fbTitle">
+    <h2 id="fbTitle">사용자 의견</h2>
+    <p class="d">불편한 점, 빠진 병원, 바라는 기능을 남겨 주세요. 로그인 없이 닉네임만 쓰면 되고, 확인 후 공개됩니다.</p>
+    <div id="fbBox"><p class="d">의견란을 준비하고 있어요. 곧 열립니다.</p></div>
   </section>
 
   <footer>
@@ -321,6 +330,17 @@ fetch("jobs.json?t=" + Date.now(), {cache:"no-store"})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
   .then(d=>{ UPDATED = d.updated; JOBS = d.jobs; SITES = d.sites || {}; fillRegions(); render(); })
   .catch(()=>{ $("empty").hidden = false; $("empty").textContent = "공고를 불러오지 못했어요. 잠시 후 새로고침해 주세요."; });
+/* ===== 익명 의견란 (Cusdis) =====
+   cusdis.com 에서 받은 App ID를 아래 따옴표 안에 넣으면 의견란이 열립니다. */
+const CUSDIS_APP_ID = "";
+(function(){
+  if (!CUSDIS_APP_ID) return;
+  const box = document.getElementById("fbBox");
+  box.innerHTML = '<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="'+CUSDIS_APP_ID+'" data-page-id="radiographer-jobs-main" data-page-url="https://radpass-kr.github.io/radiographer-jobs/" data-page-title="방사선사 채용공고 모음"></div>';
+  const sc = document.createElement("script");
+  sc.src = "https://cusdis.com/js/cusdis.es.js"; sc.async = true; sc.defer = true;
+  document.body.appendChild(sc);
+})();
 </script>
 </body>
 </html>
