@@ -225,7 +225,7 @@
    kind: "대학병원", "의료원" 또는 "보훈병원"
    type: "정규직" / "계약직" / "기간제" / "임시직" / "파트타임" 등
    sub:  "대체"가 들어가면 휴직·육아휴직 대체로 분류
-   dept: (선택) "영상의학과"/"초음파"/"핵의학과"/"방사선종양학과"/"기타" — 없으면 채용 분야 글자로 자동 분류
+   dept: (선택) "영상의학과"/"초음파"/"혈관조영"/"핵의학과"/"방사선종양학과"/"건강검진"/"기타" — 없으면 채용 분야 글자로 자동 분류
    start, deadline: "YYYY-MM-DD"  (updated는 "YYYY-MM-DD HH:MM" 형식, 시간 생략 가능)
    url:  공고 글 주소 ("공고 보기" 버튼)
    sites: 병원 이름 → 채용 홈페이지 주소 ("채용사이트 가기" 버튼)
@@ -259,14 +259,16 @@ function fmtFull(s){
   return out;
 }
 /* 부서 분류: jobs.json에 dept가 있으면 그 값을, 없으면 field·note 글자로 자동 분류 */
-const DEPTS=["영상의학과","초음파","핵의학과","방사선종양학과","기타"];
+const DEPTS=["영상의학과","초음파","혈관조영","핵의학과","방사선종양학과","건강검진","기타"];
 function deptOf(j){
   if (j.dept) return j.dept;
   const t=`${j.field} ${j.note||""}`;
   if (/초음파/.test(t)) return "초음파";
+  if (/혈관조영|인터벤션|심혈관|심장혈관|조영실|angio/i.test(t)) return "혈관조영";
   if (/핵의학/.test(t)) return "핵의학과";
   if (/방사선종양|방사선치료|선형가속/.test(t)) return "방사선종양학과";
-  if (/영상|CT|MRI|일반촬영|혈관조영|인터벤션/i.test(t)) return "영상의학과";
+  if (/건강증진|검진/.test(t)) return "건강검진";
+  if (/영상|CT|MRI|일반촬영/i.test(t)) return "영상의학과";
   return "기타";
 }
 let DEPT="";
