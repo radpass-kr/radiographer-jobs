@@ -48,6 +48,12 @@
   .updbox .hl{color:#f5c542;font-weight:700}
   .updbox .sm{color:#9fb3d9;font-size:.82rem;margin-top:.45rem}
   .notice{background:#fff8e6;border:1px solid #f1dfaa;border-radius:10px;padding:.7rem 1rem;font-size:.9rem;margin:.6rem 0 1rem}
+  .depts{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 .7rem}
+  .depts button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:.4rem .9rem;font:inherit;font-size:.92rem;cursor:pointer}
+  .depts button:hover{border-color:var(--accent)}
+  .depts button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+  .depts button .n{font-size:.8em;opacity:.75;margin-left:.25rem}
+  .tag.dept{background:#fff3e0;color:#9a5300}
   .controls{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.8rem;margin-bottom:1rem}
   .controls input[type=search]{flex:1 1 240px;padding:.55rem .7rem;border:1px solid var(--line);border-radius:8px;font:inherit}
   .controls select{padding:.5rem .6rem;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
@@ -124,7 +130,7 @@
     <div class="stat"><b id="cUpd">-</b><span>마지막 업데이트</span></div>
     <div class="stat"><b><span id="vToday">-</span> <small style="font-size:.6em;color:var(--muted);font-weight:400">/ <span id="vTotal">-</span></small></b><span>TODAY / TOTAL 방문</span></div>
   </div>
-  <p class="notice">공고는 직접 확인해서 손으로 업데이트합니다. 병원 사정으로 조기 마감되거나 일정이 바뀔 수 있어요. 마감일은 해당일 23:59 기준으로 계산합니다.</p>
+  <p class="notice">병원 사정으로 조기 마감되거나 일정이 바뀔 수 있어요. 마감일은 해당일 23:59 기준으로 계산합니다.</p>
 
   <a class="ad" href="https://kmong.com/@%EB%9D%BC%EB%93%9C%ED%8C%A8%EC%8A%A4" target="_blank" rel="noopener sponsored" aria-label="라드패스 방사선사 국가고시 자료집 보러 가기 (크몽, 새 창)">
     <img src="radpass.jpg" alt="RADPASS 라드패스 — 방사선사 국가고시 완벽 대비 (일반촬영·CT·MRI·혈관조영·핵의학·방사선치료·방사선물리·방사선생물)" width="800" height="600">
@@ -135,6 +141,8 @@
       <span class="go">크몽에서 보기 →</span>
     </span>
   </a>
+
+  <div class="depts" role="group" aria-label="부서별 보기" id="depts"></div>
 
   <div class="controls">
     <input type="search" id="q" placeholder="병원명, 부서(CT·MRI·핵의학·초음파 등) 검색" aria-label="검색">
@@ -217,6 +225,7 @@
    kind: "대학병원", "의료원" 또는 "보훈병원"
    type: "정규직" / "계약직" / "기간제" / "임시직" / "파트타임" 등
    sub:  "대체"가 들어가면 휴직·육아휴직 대체로 분류
+   dept: (선택) "영상의학과"/"초음파"/"핵의학과"/"방사선종양학과"/"기타" — 없으면 채용 분야 글자로 자동 분류
    start, deadline: "YYYY-MM-DD"  (updated는 "YYYY-MM-DD HH:MM" 형식, 시간 생략 가능)
    url:  공고 글 주소 ("공고 보기" 버튼)
    sites: 병원 이름 → 채용 홈페이지 주소 ("채용사이트 가기" 버튼)
@@ -249,6 +258,25 @@ function fmtFull(s){
   if(t){ let [h,m]=t.split(":").map(Number); const ap=h<12?"오전":"오후"; h=h%12||12; out+=` ${ap} ${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`; }
   return out;
 }
+/* 부서 분류: jobs.json에 dept가 있으면 그 값을, 없으면 field·note 글자로 자동 분류 */
+const DEPTS=["영상의학과","초음파","핵의학과","방사선종양학과","기타"];
+function deptOf(j){
+  if (j.dept) return j.dept;
+  const t=`${j.field} ${j.note||""}`;
+  if (/초음파/.test(t)) return "초음파";
+  if (/핵의학/.test(t)) return "핵의학과";
+  if (/방사선종양|방사선치료|선형가속/.test(t)) return "방사선종양학과";
+  if (/영상|CT|MRI|일반촬영|혈관조영|인터벤션/i.test(t)) return "영상의학과";
+  return "기타";
+}
+let DEPT="";
+function drawDepts(){
+  const cnt={}; JOBS.forEach(j=>{ if(dleft(j)>=0){ const d=deptOf(j); cnt[d]=(cnt[d]||0)+1; } });
+  const all=JOBS.filter(j=>dleft(j)>=0).length;
+  $("depts").innerHTML=[["","전체",all],...DEPTS.map(d=>[d,d,cnt[d]||0])]
+    .map(([v,l,n])=>`<button type="button" data-dept="${v}" aria-pressed="${DEPT===v}">${l}<span class="n">${n}</span></button>`).join("");
+  $("depts").querySelectorAll("button").forEach(b=>b.addEventListener("click",()=>{ DEPT=b.dataset.dept; drawDepts(); render(); }));
+}
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 function fillRegions(){
@@ -268,6 +296,7 @@ function render(){
   list = list.filter(j=>{
     if (hide && j.left<0) return false;
     if (k && j.kind!==k) return false;
+    if (DEPT && deptOf(j)!==DEPT) return false;
     if (r && j.region!==r) return false;
     if (t && typeGroup(j)!==t) return false;
     if (q && !(`${j.org} ${j.field} ${j.place} ${j.type} ${j.sub||""}`.toLowerCase().includes(q))) return false;
@@ -287,7 +316,7 @@ function render(){
     else badge=`<span class="dday ${j.left<=3?"soon":"open"}">D-${j.left}</span>`;
     return `<tr class="${j.left<0?"is-closed":""}">
       <td data-label="기관"><div class="org">${esc(j.org)}</div><span class="tag">${esc(j.kind)}</span></td>
-      <td data-label="채용 분야">${esc(j.field)}<div><span class="tag type">${esc(j.type)}</span>${j.sub?`<span class="tag type">${esc(j.sub)}</span>`:""}</div>${j.note?`<div class="note">${esc(j.note)}</div>`:""}</td>
+      <td data-label="채용 분야">${esc(j.field)}<div><span class="tag dept">${esc(deptOf(j))}</span><span class="tag type">${esc(j.type)}</span>${j.sub?`<span class="tag type">${esc(j.sub)}</span>`:""}</div>${j.note?`<div class="note">${esc(j.note)}</div>`:""}</td>
       <td data-label="근무지"><span class="tag reg">${esc(j.region)}</span> ${esc(j.place)}</td>
       <td data-label="접수 마감">${fmt(j.deadline)} ${badge}<div class="note">접수 시작 ${fmt(j.start)}</div></td>
       <td data-label="바로가기" class="links-cell">${linkCell(j)}</td>
@@ -328,7 +357,7 @@ try{ if(localStorage.getItem("textSize")==="large") document.querySelector('.siz
 
 fetch("jobs.json?t=" + Date.now(), {cache:"no-store"})
   .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d=>{ UPDATED = d.updated; JOBS = d.jobs; SITES = d.sites || {}; fillRegions(); render(); })
+  .then(d=>{ UPDATED = d.updated; JOBS = d.jobs; SITES = d.sites || {}; fillRegions(); drawDepts(); render(); })
   .catch(()=>{ $("empty").hidden = false; $("empty").textContent = "공고를 불러오지 못했어요. 잠시 후 새로고침해 주세요."; });
 /* ===== 익명 의견란 (Cusdis) =====
    cusdis.com 에서 받은 App ID를 아래 따옴표 안에 넣으면 의견란이 열립니다. */
