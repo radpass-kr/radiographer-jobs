@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22 22:06",
+  "updated": "2026-11-23 08:02",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -24,88 +24,6 @@
     "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101"
   },
   "jobs": [
-    {
-      "org": "강북삼성병원",
-      "kind": "대학병원",
-      "field": "영상의학과 특수파트 방사선사",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 종로구",
-      "start": "2026-11-16",
-      "deadline": "2026-11-22",
-      "url": "https://kbsmcrecruit.ninehire.site/job_posting/Y85k7nIM",
-      "note": "오후 11시 마감"
-    },
-    {
-      "org": "경상북도안동의료원",
-      "kind": "의료원",
-      "field": "영상의학과 방사선사 (재공고)",
-      "type": "계약직",
-      "sub": "육아휴직 대체",
-      "region": "경북",
-      "place": "경북 안동시",
-      "start": "2026-11-13",
-      "deadline": "2026-11-22",
-      "note": "마감일 17:00까지 · 1명",
-      "url": "https://amc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=272348"
-    },
-    {
-      "org": "고려대학교 안암병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 성북구",
-      "start": "2026-11-16",
-      "deadline": "2026-11-22",
-      "url": "https://kumc.recruiter.co.kr/career/home"
-    },
-    {
-      "org": "구미차병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "계약직",
-      "region": "경북",
-      "place": "경북 구미시",
-      "start": "2026-11-16",
-      "deadline": "2026-11-22",
-      "note": "차의과학대학교 부속 · 오후 11시 마감 · 조기마감 가능",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50369847"
-    },
-    {
-      "org": "이대목동병원",
-      "kind": "대학병원",
-      "field": "영상의학팀 방사선사",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 양천구",
-      "start": "2026-11-16",
-      "deadline": "2026-11-22",
-      "url": "https://www.eumc.ac.kr/intro/recrut/view.do?bbs_no=31741"
-    },
-    {
-      "org": "인제대학교 부산백병원",
-      "kind": "대학병원",
-      "field": "산부인과 초음파실 방사선사 (신입)",
-      "type": "정규직",
-      "region": "부산",
-      "place": "부산 부산진구",
-      "start": "2026-11-09",
-      "deadline": "2026-11-22",
-      "url": "https://paik.recruiter.co.kr/"
-    },
-    {
-      "org": "중앙대학교광명병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "경기",
-      "place": "경기 광명시",
-      "start": "2026-11-17",
-      "deadline": "2026-11-22",
-      "url": "https://caumc.recruiter.co.kr/career/jobs/134689"
-    },
     {
       "org": "가톨릭대학교 은평성모병원",
       "kind": "대학병원",
@@ -342,6 +260,18 @@
       "start": "2026-11-19",
       "deadline": "2026-11-29",
       "url": "https://recruit.cmcnu.or.kr/"
+    },
+    {
+      "org": "순천향대학교 부속 부천병원",
+      "kind": "대학병원",
+      "field": "영상의학팀 방사선사",
+      "type": "정규직",
+      "region": "경기",
+      "place": "경기 부천시 원미구",
+      "start": "2026-11-23",
+      "deadline": "2026-11-29",
+      "note": "홈페이지 지원 · 마감 시각은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%88%9C%EC%B2%9C%ED%96%A5%EB%8C%80%EB%B6%80%EC%B2%9C%EB%B3%91%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
     },
     {
       "org": "인제대학교 일산백병원",
