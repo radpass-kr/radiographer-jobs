@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22 07:40",
+  "updated": "2026-11-22 14:07",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -54,7 +54,8 @@
       "place": "서울 종로구",
       "start": "2026-11-16",
       "deadline": "2026-11-22",
-      "url": "https://kbsmcrecruit.ninehire.site/job_posting/Y85k7nIM"
+      "url": "https://kbsmcrecruit.ninehire.site/job_posting/Y85k7nIM",
+      "note": "오후 11시 마감"
     },
     {
       "org": "중앙대학교광명병원",
@@ -80,6 +81,31 @@
       "url": "https://paik.recruiter.co.kr/"
     },
     {
+      "org": "경상북도안동의료원",
+      "kind": "의료원",
+      "field": "영상의학과 방사선사 (재공고)",
+      "type": "계약직",
+      "sub": "육아휴직 대체",
+      "region": "경북",
+      "place": "경북 안동시",
+      "start": "2026-11-13",
+      "deadline": "2026-11-22",
+      "note": "마감일 17:00까지 · 1명",
+      "url": "https://amc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=272348"
+    },
+    {
+      "org": "구미차병원",
+      "kind": "대학병원",
+      "field": "영상의학과 방사선사",
+      "type": "계약직",
+      "region": "경북",
+      "place": "경북 구미시",
+      "start": "2026-11-16",
+      "deadline": "2026-11-22",
+      "note": "차의과학대학교 부속 · 오후 11시 마감 · 조기마감 가능",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50369847"
+    },
+    {
       "org": "이대서울병원",
       "kind": "대학병원",
       "field": "산부인과 방사선사",
@@ -103,6 +129,18 @@
       "deadline": "2026-11-23",
       "note": "오전 10:00 마감",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50397249"
+    },
+    {
+      "org": "세종충남대학교병원",
+      "kind": "대학병원",
+      "field": "공무직 방사선사 (방사선사 A)",
+      "type": "공무직",
+      "region": "세종",
+      "place": "세종특별자치시",
+      "start": "2026-11-19",
+      "deadline": "2026-11-23",
+      "note": "접수 시작일은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%84%B8%EC%A2%85%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
     },
     {
       "org": "경희의료원",
@@ -135,7 +173,8 @@
       "place": "서울 성북구",
       "start": "2026-11-19",
       "deadline": "2026-11-24",
-      "url": "https://kumc.recruiter.co.kr/career/home"
+      "url": "https://kumc.recruiter.co.kr/career/home",
+      "note": "오후 3시 마감"
     },
     {
       "org": "단국대학교병원",
@@ -158,6 +197,44 @@
       "start": "2026-11-19",
       "deadline": "2026-11-25",
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180003540"
+    },
+    {
+      "org": "제주대학교병원",
+      "kind": "대학병원",
+      "field": "방사선사",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "제주",
+      "place": "제주 제주시",
+      "start": "2026-11-18",
+      "deadline": "2026-11-25",
+      "note": "같은 내용 공고 2건 게시됨",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611190000042"
+    },
+    {
+      "org": "전남대학교병원 (화순)",
+      "kind": "대학병원",
+      "field": "11월 지원직 공개채용 (영상의학검사)",
+      "type": "계약직",
+      "region": "전남",
+      "place": "전남 화순군",
+      "start": "2026-11-12",
+      "deadline": "2026-11-25",
+      "note": "여러 직종 통합 공고 · 고용형태 원문 확인 · 오후 5시 마감",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611120000051"
+    },
+    {
+      "org": "고려대학교 안산병원",
+      "kind": "대학병원",
+      "field": "방사선종양학과 방사선사 (선형가속기 방사선치료 · 주간근무)",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "경기",
+      "place": "경기 안산시",
+      "start": "2026-11-19",
+      "deadline": "2026-11-25",
+      "note": "오후 3시 마감 · 근무기간 입사일~2027.6.15 · 종합병원 이상 선형가속기 경력자 우대",
+      "url": "https://kumc.recruiter.co.kr/career/jobs/135026"
     },
     {
       "org": "삼성서울병원",
@@ -206,6 +283,44 @@
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000022"
     },
     {
+      "org": "전남대학교병원",
+      "kind": "대학병원",
+      "field": "11월 직원(대체근로자) 공개채용 (방사선사 포함)",
+      "type": "계약직",
+      "sub": "대체근로",
+      "region": "광주",
+      "place": "광주 동구",
+      "start": "2026-11-19",
+      "deadline": "2026-11-26",
+      "note": "여러 직종 통합 공고 · 방사선사 인원은 원문 확인 · 오후 5시 마감",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50402274"
+    },
+    {
+      "org": "한림대학교 강남성심병원",
+      "kind": "대학병원",
+      "field": "영상의학과 방사선사",
+      "type": "정규직",
+      "region": "서울",
+      "place": "서울 영등포구",
+      "start": "2026-11-22",
+      "deadline": "2026-11-26",
+      "note": "접수 시작일·마감 시각은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EA%B0%95%EB%82%A8%EC%84%B1%EC%8B%AC%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
+    },
+    {
+      "org": "광주보훈병원",
+      "kind": "보훈병원",
+      "field": "계약직 보건직 방사선사 (작업치료사와 통합 공고)",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "광주",
+      "place": "광주 광산구",
+      "start": "2026-11-18",
+      "deadline": "2026-11-27",
+      "note": "한국보훈복지의료공단 소속 · 인원·마감 시각은 원문 확인",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000071"
+    },
+    {
       "org": "가톨릭대학교 의정부성모병원",
       "kind": "대학병원",
       "field": "영상의학팀 방사선사",
@@ -240,68 +355,6 @@
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611190000045"
     },
     {
-      "org": "고려대학교 안산병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사 (12개월)",
-      "type": "계약직",
-      "sub": "육아휴직 대체",
-      "region": "경기",
-      "place": "경기 안산시",
-      "start": "2026-11-04",
-      "deadline": "2026-12-04",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50306268"
-    },
-    {
-      "org": "세종충남대학교병원",
-      "kind": "대학병원",
-      "field": "공무직 방사선사 (방사선사 A)",
-      "type": "공무직",
-      "region": "세종",
-      "place": "세종특별자치시",
-      "start": "2026-11-19",
-      "deadline": "2026-11-23",
-      "note": "접수 시작일은 원문 확인",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%84%B8%EC%A2%85%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
-    },
-    {
-      "org": "제주대학교병원",
-      "kind": "대학병원",
-      "field": "방사선사",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "제주",
-      "place": "제주 제주시",
-      "start": "2026-11-18",
-      "deadline": "2026-11-25",
-      "note": "같은 내용 공고 2건 게시됨",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611190000042"
-    },
-    {
-      "org": "경상북도안동의료원",
-      "kind": "의료원",
-      "field": "영상의학과 방사선사 (재공고)",
-      "type": "계약직",
-      "sub": "육아휴직 대체",
-      "region": "경북",
-      "place": "경북 안동시",
-      "start": "2026-11-13",
-      "deadline": "2026-11-22",
-      "note": "마감일 17:00까지 · 1명",
-      "url": "https://amc.recruiter.co.kr/app/jobnotice/view?systemKindCode=MRS2&jobnoticeSn=272348"
-    },
-    {
-      "org": "전남대학교병원 (화순)",
-      "kind": "대학병원",
-      "field": "11월 지원직 공개채용 (영상의학검사)",
-      "type": "계약직",
-      "region": "전남",
-      "place": "전남 화순군",
-      "start": "2026-11-12",
-      "deadline": "2026-11-25",
-      "note": "여러 직종 통합 공고 · 고용형태 원문 확인",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611120000051"
-    },
-    {
       "org": "삼성창원병원",
       "kind": "대학병원",
       "field": "영상의학과검사팀 방사선사",
@@ -314,30 +367,28 @@
       "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%82%BC%EC%84%B1%EC%B0%BD%EC%9B%90%EB%B3%91%EC%9B%90%20%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
     },
     {
-      "org": "광주보훈병원",
-      "kind": "보훈병원",
-      "field": "계약직 보건직 방사선사 (작업치료사와 통합 공고)",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "광주",
-      "place": "광주 광산구",
-      "start": "2026-11-18",
-      "deadline": "2026-11-27",
-      "note": "한국보훈복지의료공단 소속 · 인원·마감 시각은 원문 확인",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000071"
+      "org": "한양대학교구리병원",
+      "kind": "대학병원",
+      "field": "영상의학과 방사선사 (2026년 신규직원)",
+      "type": "정규직",
+      "region": "경기",
+      "place": "경기 구리시",
+      "start": "2026-11-22",
+      "deadline": "2026-12-03",
+      "note": "접수 시작일·마감 시각은 원문 확인",
+      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%ED%95%9C%EC%96%91%EB%8C%80%ED%95%99%EA%B5%90%EA%B5%AC%EB%A6%AC%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
     },
     {
       "org": "고려대학교 안산병원",
       "kind": "대학병원",
-      "field": "방사선종양학과 방사선사 (선형가속기 방사선치료 · 주간근무)",
+      "field": "영상의학과 방사선사 (12개월)",
       "type": "계약직",
-      "sub": "휴직대체",
+      "sub": "육아휴직 대체",
       "region": "경기",
       "place": "경기 안산시",
-      "start": "2026-11-19",
-      "deadline": "2026-11-25",
-      "note": "오후 3시 마감 · 근무기간 입사일~2027.6.15 · 종합병원 이상 선형가속기 경력자 우대",
-      "url": "https://kumc.recruiter.co.kr/career/jobs/135026"
+      "start": "2026-11-04",
+      "deadline": "2026-12-04",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50306268"
     }
   ]
 }
