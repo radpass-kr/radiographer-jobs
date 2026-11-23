@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 21:56",
+  "updated": "2026-11-24 08:04",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -25,43 +25,6 @@
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
   },
   "jobs": [
-    {
-      "org": "가톨릭대학교 은평성모병원",
-      "kind": "대학병원",
-      "field": "영상의학팀 방사선직 (12개월)",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "서울",
-      "place": "서울 은평구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-23",
-      "note": "오전 10:00 마감",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50397249"
-    },
-    {
-      "org": "세종충남대학교병원",
-      "kind": "대학병원",
-      "field": "공무직 방사선사 (방사선사 A)",
-      "type": "공무직",
-      "region": "세종",
-      "place": "세종특별자치시",
-      "start": "2026-11-19",
-      "deadline": "2026-11-23",
-      "note": "접수 시작일은 원문 확인",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EC%84%B8%EC%A2%85%EC%B6%A9%EB%82%A8%EB%8C%80%ED%95%99%EA%B5%90%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
-    },
-    {
-      "org": "이대서울병원",
-      "kind": "대학병원",
-      "field": "산부인과 방사선사",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 강서구",
-      "start": "2026-11-06",
-      "deadline": "2026-11-23",
-      "note": "17:00 마감",
-      "url": "https://www.eumc.ac.kr/intro/recrut/view.do?bbs_no=31682"
-    },
     {
       "org": "경희의료원",
       "kind": "대학병원",
