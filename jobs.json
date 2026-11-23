@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23 14:50",
+  "updated": "2026-11-23 21:56",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -21,7 +21,8 @@
     "경상북도안동의료원": "https://amc.recruiter.co.kr/",
     "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp",
     "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit",
-    "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101"
+    "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101",
+    "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
   },
   "jobs": [
     {
@@ -260,6 +261,19 @@
       "start": "2026-11-19",
       "deadline": "2026-11-29",
       "url": "https://recruit.cmcnu.or.kr/"
+    },
+    {
+      "org": "건국대학교 충주병원",
+      "kind": "대학병원",
+      "field": "영상의학과 방사선사",
+      "type": "계약직",
+      "sub": "24개월",
+      "region": "충북",
+      "place": "충북 충주시",
+      "start": "2026-11-23",
+      "deadline": "2026-11-29",
+      "note": "오후 5시 마감 · 조기 마감 가능",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50416176"
     },
     {
       "org": "고신대학교복음병원",
