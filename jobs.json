@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24 22:04",
+  "updated": "2026-11-25 08:10",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -25,51 +25,6 @@
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
   },
   "jobs": [
-    {
-      "org": "경희의료원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사 (신입)",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 동대문구",
-      "start": "2026-11-17",
-      "deadline": "2026-11-24",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611170003858"
-    },
-    {
-      "org": "경희의료원",
-      "kind": "대학병원",
-      "field": "건강증진센터 오전근무 방사선사 (신입)",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 동대문구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-24",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180002213"
-    },
-    {
-      "org": "고려대학교 안암병원",
-      "kind": "대학병원",
-      "field": "핵의학 방사선사",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 성북구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-24",
-      "url": "https://kumc.recruiter.co.kr/career/jobs/134862",
-      "note": "오후 3시 마감"
-    },
-    {
-      "org": "단국대학교병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "기간제",
-      "region": "충남",
-      "place": "충남 천안시",
-      "start": "2026-11-08",
-      "deadline": "2026-11-24",
-      "url": "https://www.dkuh.co.kr/html_2016/"
-    },
     {
       "org": "경희의료원",
       "kind": "대학병원",
