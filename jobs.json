@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25 22:07",
+  "updated": "2026-11-26 08:14",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -25,55 +25,6 @@
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
   },
   "jobs": [
-    {
-      "org": "경희의료원",
-      "kind": "대학병원",
-      "field": "치과 영상 방사선사 (신입)",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 동대문구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-25",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180003540"
-    },
-    {
-      "org": "고려대학교 안산병원",
-      "kind": "대학병원",
-      "field": "방사선종양학과 방사선사 (선형가속기 방사선치료 · 주간근무)",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "경기",
-      "place": "경기 안산시",
-      "start": "2026-11-19",
-      "deadline": "2026-11-25",
-      "note": "오후 3시 마감 · 근무기간 입사일~2027.6.15 · 종합병원 이상 선형가속기 경력자 우대",
-      "url": "https://kumc.recruiter.co.kr/career/jobs/135026"
-    },
-    {
-      "org": "전남대학교병원 (화순)",
-      "kind": "대학병원",
-      "field": "11월 지원직 공개채용 (영상의학검사)",
-      "type": "계약직",
-      "region": "전남",
-      "place": "전남 화순군",
-      "start": "2026-11-12",
-      "deadline": "2026-11-25",
-      "note": "여러 직종 통합 공고 · 고용형태 원문 확인 · 오후 5시 마감",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611120000051"
-    },
-    {
-      "org": "제주대학교병원",
-      "kind": "대학병원",
-      "field": "방사선사",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "제주",
-      "place": "제주 제주시",
-      "start": "2026-11-18",
-      "deadline": "2026-11-25",
-      "note": "낮 12시 마감 · 같은 내용 공고 2건 게시됨",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611190000042"
-    },
     {
       "org": "분당서울대학교병원",
       "kind": "대학병원",
