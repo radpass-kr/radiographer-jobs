@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25 08:10",
+  "updated": "2026-11-25 14:00",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -153,7 +153,7 @@
       "sub": "휴직대체",
       "region": "광주",
       "place": "광주 광산구",
-      "start": "2026-11-18",
+      "start": "2026-11-17",
       "deadline": "2026-11-27",
       "note": "한국보훈복지의료공단 소속 · 오전 10시 마감 · 인원은 원문 확인",
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000071"
@@ -192,6 +192,18 @@
       "deadline": "2026-11-29",
       "note": "오후 5시 마감 · 조기 마감 가능",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50416176"
+    },
+    {
+      "org": "강남차병원",
+      "kind": "대학병원",
+      "field": "초음파팀 방사선사",
+      "type": "계약직",
+      "region": "서울",
+      "place": "서울 강남구",
+      "start": "2026-11-23",
+      "deadline": "2026-11-30",
+      "note": "차의과학대학교 강남차병원 · 근무기간 1년(정규직 전환 가능) · 마감 시각은 원문 확인",
+      "url": "https://m.jobkorea.co.kr/Recruit/GI_Read/50416298?PageGbn=MST&sc=226"
     },
     {
       "org": "고신대학교복음병원",
