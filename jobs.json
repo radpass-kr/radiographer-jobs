@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 08:14",
+  "updated": "2026-11-26 14:07",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -143,6 +143,30 @@
       "deadline": "2026-11-29",
       "note": "오후 5시 마감 · 조기 마감 가능",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50416176"
+    },
+    {
+      "org": "가톨릭대학교 대전성모병원",
+      "kind": "대학병원",
+      "field": "영상의학팀 방사선사",
+      "type": "계약직",
+      "region": "대전",
+      "place": "대전 중구",
+      "start": "2026-11-25",
+      "deadline": "2026-11-30",
+      "note": "근무 후 평가를 거쳐 정규직 전환 가능 · 인원은 원문 확인",
+      "url": "https://www.cmcdj.or.kr/m/bbs/bbs_list.jsp?bfid=RECRUIT_09"
+    },
+    {
+      "org": "가톨릭대학교 대전성모병원",
+      "kind": "대학병원",
+      "field": "심장종합검사실 소노그래퍼 (방사선사·임상병리사 면허)",
+      "type": "계약직",
+      "region": "대전",
+      "place": "대전 중구",
+      "start": "2026-11-25",
+      "deadline": "2026-11-30",
+      "note": "심장초음파 업무 · 방사선사 또는 임상병리사 면허 소지자 · 인원은 원문 확인",
+      "url": "https://www.cmcdj.or.kr/m/bbs/bbs_list.jsp?bfid=RECRUIT_09"
     },
     {
       "org": "강남차병원",
