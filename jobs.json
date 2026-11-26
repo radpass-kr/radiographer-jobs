@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 21:49",
+  "updated": "2026-11-27 07:46",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -25,66 +25,6 @@
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
   },
   "jobs": [
-    {
-      "org": "분당서울대학교병원",
-      "kind": "대학병원",
-      "field": "11월 신입 보건직 (방사선사 포함 여부 원문 확인)",
-      "type": "계약직",
-      "region": "경기",
-      "place": "경기 성남시",
-      "start": "2026-11-17",
-      "deadline": "2026-11-26",
-      "note": "방사선사 전용 공고 아님",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000021"
-    },
-    {
-      "org": "분당서울대학교병원",
-      "kind": "대학병원",
-      "field": "11월 경력 보건직 (방사선사 포함 여부 원문 확인)",
-      "type": "계약직",
-      "region": "경기",
-      "place": "경기 성남시",
-      "start": "2026-11-17",
-      "deadline": "2026-11-26",
-      "note": "방사선사 전용 공고 아님",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000022"
-    },
-    {
-      "org": "전남대학교병원",
-      "kind": "대학병원",
-      "field": "11월 직원(대체근로자) 공개채용 (방사선사 포함)",
-      "type": "계약직",
-      "sub": "대체근로",
-      "region": "광주",
-      "place": "광주 동구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-26",
-      "note": "여러 직종 통합 공고 · 방사선사 인원은 원문 확인 · 오후 5시 마감",
-      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50402274"
-    },
-    {
-      "org": "한림대학교 강남성심병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "정규직",
-      "region": "서울",
-      "place": "서울 영등포구",
-      "start": "2026-11-22",
-      "deadline": "2026-11-26",
-      "note": "접수 시작일·마감 시각은 원문 확인",
-      "url": "https://www.saramin.co.kr/zf_user/search/recruit?searchword=%EA%B0%95%EB%82%A8%EC%84%B1%EC%8B%AC%EB%B3%91%EC%9B%90+%EB%B0%A9%EC%82%AC%EC%84%A0%EC%82%AC"
-    },
-    {
-      "org": "한양대학교병원",
-      "kind": "대학병원",
-      "field": "영상의학과 방사선사",
-      "type": "임시직",
-      "region": "서울",
-      "place": "서울 성동구",
-      "start": "2026-11-13",
-      "deadline": "2026-11-26",
-      "url": "https://hyumc.recruiter.co.kr/"
-    },
     {
       "org": "광주보훈병원",
       "kind": "보훈병원",
