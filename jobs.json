@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26 14:07",
+  "updated": "2026-11-26 14:18",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -48,17 +48,6 @@
       "deadline": "2026-11-26",
       "note": "방사선사 전용 공고 아님",
       "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000022"
-    },
-    {
-      "org": "삼성서울병원",
-      "kind": "대학병원",
-      "field": "영상의학검사실 방사선사 (5시간 근무)",
-      "type": "계약직",
-      "region": "서울",
-      "place": "서울 강남구",
-      "start": "2026-11-19",
-      "deadline": "2026-11-26",
-      "url": "https://www.samsunghospital.com/home/recruit/recruitInfo/recruitNoticeView.do?RECRUIT_CD=2026HAC10033"
     },
     {
       "org": "전남대학교병원",
