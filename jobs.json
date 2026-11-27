@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 14:17",
+  "updated": "2026-11-27 14:20",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -9,21 +9,22 @@
     "고려대학교 안산병원": "https://kumc.recruiter.co.kr/career/home",
     "중앙대학교광명병원": "https://caumc.recruiter.co.kr/",
     "인제대학교 부산백병원": "https://paik.recruiter.co.kr/",
-    "가톨릭대학교 은평성모병원": "https://recruit.cmcnu.or.kr/",
-    "가톨릭대학교 의정부성모병원": "https://recruit.cmcnu.or.kr/",
-    "경희의료원": "https://recruit.incruit.com/khmc/job/",
+    "가톨릭대학교 은평성모병원": "https://recruit.cmcnu.or.kr/cmc/index.do",
+    "가톨릭대학교 의정부성모병원": "https://recruit.cmcnu.or.kr/cmc/index.do",
+    "경희의료원": "https://recruit.incruit.com/khmc",
     "단국대학교병원": "https://www.dkuh.co.kr/html_2016/",
     "삼성서울병원": "https://www.samsunghospital.com/home/recruit/main.do",
     "한양대학교병원": "https://hyumc.recruiter.co.kr/",
-    "분당서울대학교병원": "http://recruit.snubh.org/",
+    "분당서울대학교병원": "https://snubh.recruiter.co.kr/app/jobnotice/list",
     "가톨릭관동대학교 국제성모병원": "https://ish-recruiter.recruiter.co.kr/",
     "부산대학교병원": "https://pnuh.recruiter.co.kr/",
     "경상북도안동의료원": "https://amc.recruiter.co.kr/",
     "강북삼성병원": "https://kbsmcrecruit.ninehire.site/4qxkvknx",
-    "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit",
+    "고신대학교복음병원": "https://kosinmed.recruiter.co.kr/career/job",
     "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101",
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134",
-    "원광대학교 산본병원": "https://www.wmcsb.co.kr/"
+    "원광대학교 산본병원": "https://www.wmcsb.co.kr/",
+    "충청북도청주의료원": "https://www.cjmc.or.kr/n_sub3_2_list.php?mm=3"
   },
   "jobs": [
     {
