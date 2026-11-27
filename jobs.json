@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 22:02",
+  "updated": "2026-11-28 07:54",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -24,22 +24,10 @@
     "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101",
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134",
     "원광대학교 산본병원": "https://www.wmcsb.co.kr/",
-    "충청북도청주의료원": "https://www.cjmc.or.kr/n_sub3_2_list.php?mm=3"
+    "충청북도청주의료원": "https://www.cjmc.or.kr/n_sub3_2_list.php?mm=3",
+    "경상북도김천의료원": "https://gcmc.recruiter.co.kr/career/home"
   },
   "jobs": [
-    {
-      "org": "광주보훈병원",
-      "kind": "보훈병원",
-      "field": "계약직 보건직 방사선사 (작업치료사와 통합 공고)",
-      "type": "계약직",
-      "sub": "휴직대체",
-      "region": "광주",
-      "place": "광주 광산구",
-      "start": "2026-11-17",
-      "deadline": "2026-11-27",
-      "note": "한국보훈복지의료공단 소속 · 오전 10시 마감 · 인원은 원문 확인",
-      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611180000071"
-    },
     {
       "org": "가톨릭관동대학교 국제성모병원",
       "kind": "대학병원",
@@ -207,6 +195,18 @@
       "start": "2026-11-04",
       "deadline": "2026-12-04",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50306268"
+    },
+    {
+      "org": "경상북도김천의료원",
+      "kind": "의료원",
+      "field": "방사선사 (신입)",
+      "type": "정규직",
+      "region": "경북",
+      "place": "경북 김천시",
+      "start": "2026-11-23",
+      "deadline": "2026-12-06",
+      "note": "수습기간 3개월 · 홈페이지 지원",
+      "url": "https://www.saramin.co.kr/zf_user/jobs/view?rec_idx=55665060"
     },
     {
       "org": "원광대학교 산본병원",
