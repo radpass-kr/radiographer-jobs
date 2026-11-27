@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 07:46",
+  "updated": "2026-11-27 09:36",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -133,6 +133,18 @@
       "deadline": "2026-11-30",
       "note": "오후 5시 마감(공식 게시판 목록 기준) · 본문에는 '채용 시까지'로 표기되어 조기 마감 가능",
       "url": "https://www.eumc.ac.kr/intro/recrut/view.do?bbs_no=31682&pageIndex=1"
+    },
+    {
+      "org": "경희의료원",
+      "kind": "대학병원",
+      "field": "건강증진센터 오전근무 방사선사 (신입)",
+      "type": "계약직",
+      "region": "서울",
+      "place": "서울 동대문구",
+      "start": "2026-11-25",
+      "deadline": "2026-12-01",
+      "note": "근무기간 협의 · 조기 마감 가능",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2611250000892"
     },
     {
       "org": "인제대학교 일산백병원",
