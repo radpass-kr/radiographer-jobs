@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27 09:36",
+  "updated": "2026-11-27 13:54",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -22,7 +22,8 @@
     "강북삼성병원": "https://recruit.kbsmc.co.kr/jsp/recruit/recruitList.jsp",
     "고신대학교복음병원": "https://www.kosinmed.or.kr/service/service_3.php?boardid=recruit",
     "인제대학교 일산백병원": "https://ilsan.paik.ac.kr/ilsan/user/job/list.do?menuNo=900101",
-    "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134"
+    "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134",
+    "원광대학교 산본병원": "https://www.wmcsb.co.kr/"
   },
   "jobs": [
     {
@@ -205,6 +206,32 @@
       "start": "2026-11-04",
       "deadline": "2026-12-04",
       "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50306268"
+    },
+    {
+      "org": "원광대학교 산본병원",
+      "kind": "대학병원",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "경기",
+      "place": "경기 군포시",
+      "start": "2026-11-27",
+      "deadline": "2026-12-06",
+      "field": "영상의학실 방사선사 (근무기간 채용시~2027.10.31)",
+      "note": "원광대학교 부속 · 1명 · 휴직자 복귀 시 계약 종료 · 홈페이지 온라인 접수·이메일 · 마감 시각은 원문 확인",
+      "url": "https://www.wmcsb.co.kr/bbs/board.php?bo_table=recruit_02_01_01&wr_id=271"
+    },
+    {
+      "org": "원광대학교 산본병원",
+      "kind": "대학병원",
+      "type": "계약직",
+      "sub": "휴직대체",
+      "region": "경기",
+      "place": "경기 군포시",
+      "start": "2026-11-27",
+      "deadline": "2026-12-06",
+      "field": "영상의학실 방사선사 (근무기간 채용시~2027.04.30)",
+      "note": "원광대학교 부속 · 1명 · 휴직자 복귀 시 계약 종료 · 홈페이지 온라인 접수·이메일 · 마감 시각은 원문 확인",
+      "url": "https://www.wmcsb.co.kr/bbs/board.php?bo_table=recruit_02_01_01&wr_id=270"
     },
     {
       "org": "영남대학교영천병원",
