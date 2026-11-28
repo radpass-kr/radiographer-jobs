@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28 07:54",
+  "updated": "2026-11-28 09:01",
   "sites": {
     "분당차병원": "https://recruit.chamc.co.kr/",
     "세브란스병원": "https://yuhs.recruiter.co.kr/",
@@ -25,7 +25,8 @@
     "건국대학교 충주병원": "https://www.kuh.co.kr/bbs/data/list.do?per_menu_idx=51&tabCnt=3&menu_idx=134",
     "원광대학교 산본병원": "https://www.wmcsb.co.kr/",
     "충청북도청주의료원": "https://www.cjmc.or.kr/n_sub3_2_list.php?mm=3",
-    "경상북도김천의료원": "https://gcmc.recruiter.co.kr/career/home"
+    "경상북도김천의료원": "https://gcmc.recruiter.co.kr/career/home",
+    "충남대학교병원": "https://cnuhinsa.recruiter.co.kr/career/home"
   },
   "jobs": [
     {
@@ -233,6 +234,18 @@
       "field": "영상의학실 방사선사 (근무기간 채용시~2027.04.30)",
       "note": "원광대학교 부속 · 1명 · 휴직자 복귀 시 계약 종료 · 홈페이지 온라인 접수·이메일 · 마감 시각은 원문 확인",
       "url": "https://www.wmcsb.co.kr/bbs/board.php?bo_table=recruit_02_01_01&wr_id=270"
+    },
+    {
+      "org": "충남대학교병원",
+      "kind": "대학병원",
+      "field": "방사선종양학과 방사선사 (2026년 12월 계약직 직원 채용)",
+      "type": "계약직",
+      "region": "대전",
+      "place": "대전 중구",
+      "start": "2026-11-27",
+      "deadline": "2026-12-11",
+      "note": "여러 직종 통합 공고 · 방사선사 2명 · 계약기간 임용일로부터 1년 · 마감 시각 원문 확인",
+      "url": "https://cnuhinsa.recruiter.co.kr/career/jobs/135821"
     },
     {
       "org": "영남대학교영천병원",
